@@ -2,6 +2,7 @@ package String;
 
 /**
  * Created by silence on 2017/3/19.
+ * 详细思路见‘算法 日常积累（思路）’之KMP
  */
 public class KMP {
     private String pat;
