@@ -5,9 +5,9 @@ package Num227BasicCalculatorII;
  */
 public class Main {
     public static void main(String[] args) {
-        String s = "1+1-1";
+        String s = "5*4-3";
         System.out.println(System.currentTimeMillis());
-        System.out.println(new Solution().calculate(s));
+        System.out.println(new FastSolution().calculate(s));
         System.out.println(System.currentTimeMillis());
     }
 }
