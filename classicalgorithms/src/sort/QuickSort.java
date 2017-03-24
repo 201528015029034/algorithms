@@ -30,10 +30,12 @@ public class QuickSort {
     private static int partition(Comparable[] a, int lo, int hi) {
         int i = lo, j = hi+1;
         while(true) {
+            //这里在判断的时候是不是应该加上等于，即只找到左边大于Comparable[lo]的数
             while(less(a[++i], a[lo])) {
                 if(i == hi)
                     break;
             }
+            //这里是不是应该也该加上等号，不过，就要在for循坏里面判断左边界。
             while(less(a[lo], a[--j]));
             if(i >= j) break;
             exch(a, i, j);
