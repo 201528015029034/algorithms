@@ -26,6 +26,9 @@ public class MyQueue {
         return popValue;
     }
 
+    /**
+     * 这里采用递归实现queue.pop，只要stack.pop()出来的不是最后一个元素，我就把它保存起来，然后才push回去
+     */
     private void implPop() {
         int m = stack.pop();
         if(stack.isEmpty()) {
