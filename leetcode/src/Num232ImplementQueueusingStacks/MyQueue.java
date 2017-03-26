@@ -50,6 +50,7 @@ public class MyQueue {
         if(stack.isEmpty()) {
             popValue = m;
         }else {
+            //第一次提交时，这里写错误，因为代码是从implPop复制过来的，这里忘记改了
             implPeek();
         }
         stack.push(m);
