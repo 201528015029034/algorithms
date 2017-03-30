@@ -10,7 +10,7 @@ package sort;
 public class Test {
     public static void main(String[] args) {
         Double[] datas = new Double[1000];
-        Integer[] sameDatas = new Integer[1000];
+        int[] sameDatas = new int[1000];
         for(int i=0; i<datas.length; i++) {
             datas[i] = 10000 * Math.random();
             if (Math.random() > 0.5) {
@@ -21,7 +21,8 @@ public class Test {
         }
 
         System.out.println(System.currentTimeMillis());
-        QuickSort.sort(sameDatas);
+//        QuickSort.sort(sameDatas);
+        HeapSort.sort(sameDatas);
         System.out.println(System.currentTimeMillis());
         for(int i=0; i<sameDatas.length; i++) {
             if(i>0 && sameDatas[i]<sameDatas[i-1]) {
