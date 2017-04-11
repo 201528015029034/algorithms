@@ -10,6 +10,7 @@ package sort;
 public class Test {
     public static void main(String[] args) {
         Double[] datas = new Double[1000];
+//        Integer[] sameDatas = new Integer[]{2,1,2,3,4,1};
         Integer[] sameDatas = new Integer[1000];
         for(int i=0; i<datas.length; i++) {
             datas[i] = 10000 * Math.random();

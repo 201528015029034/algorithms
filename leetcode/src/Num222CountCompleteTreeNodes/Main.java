@@ -10,7 +10,6 @@ public class Main {
         root.right = new TreeNode(2);
         root.left.left = new TreeNode(2);
         System.out.println(System.currentTimeMillis());
-//        new Solution().countNodes(root);
         System.out.println(new Solution().countNodes(root));
         System.out.println(System.currentTimeMillis());
     }
